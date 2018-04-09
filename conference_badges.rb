@@ -10,8 +10,8 @@ def batch_badge_creator(speakers)
 end
 
 def assign_rooms(speakers)
-  speakers.collect do |speaker| 
-    "Hello, #{speaker}! You'll be assigned to room "
+  speakers.enum_for(:each_with_index).collect do |speaker, index|
+    "Hello, #{speaker}! You'll be assigned to room #{index + 1}!"
 end
 
 def printer(speakers)
