@@ -10,9 +10,10 @@ def batch_badge_creator(speakers)
 end
 
 def assign_rooms(speakers)
-  #code
+  speakers.collect do |speaker| 
+    "Hello, #{speaker}! You'll be assigned to room "
 end
 
 def printer(speakers)
   #code
-end 
+end
